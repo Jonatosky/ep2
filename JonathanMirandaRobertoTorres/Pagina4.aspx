@@ -65,15 +65,9 @@
 <body>
     <div class="container">
        <img src="img/LOGO-FONDO-BLANCO-JPG%20(1).jpg" style="height: 149px; width: 485px" />
-        <h1 class="auto-style1">Roberto Torres</h1>
-        <h1 class="auto-style1">Jonathan Miranda</h1>
-        
-        <div class="btn-container">
-            <button class="btn btn-1" onclick="window.location.href='pagina1.aspx'">Calculadora de Notas</button>
-            <button class="btn btn-2" onclick="window.location.href='pagina2.aspx'">Concatenar Nombre</button>
-            <button class="btn btn-3" onclick="window.location.href='pagina3.aspx'">Formulario de Contacto</button>
-            <button class="btn btn-4" onclick="window.location.href='pagina4.aspx'">Imagenes</button>
-        </div>
-    </div>
-</body>
-</html>
+        <h1 class="auto-style1">Imagenes</h1>
+        <h1 class="auto-style1">Unidad 3</h1>  
+
+
+<button class="btn btn-return" onclick="window.location.href='index.aspx'">Volver al Menú Principal</button>
+</div>
