@@ -11,11 +11,15 @@
       background-color: #808080;
     }
     input, select, button {
+      background-color: #0094ff;
+        color: white;
       margin: 10px;
       padding: 10px;
       font-size: 16px;
     }
     .resultado {
+        background-color: #0094ff;
+        color: white;
       margin-top: 20px;
       font-size: 18px;
     }

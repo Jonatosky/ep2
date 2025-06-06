@@ -56,6 +56,10 @@
         .btn-4 {
             background-color: #ff6a00;
             color: white;
+        }
+        btn-5 {
+            background-color: #ff6a00;
+            color: white;
 }
         .btn:hover {
             opacity: 0.8;
@@ -77,6 +81,8 @@
             <button class="btn btn-2" onclick="window.location.href='pagina2.aspx'">Concatenar Nombre</button>
             <button class="btn btn-3" onclick="window.location.href='pagina3.aspx'">Formulario de Contacto</button>
             <button class="btn btn-4" onclick="window.location.href='pagina4.aspx'">Calculadora</button>
+            <button class="btn btn-5" onclick="window.close()">Cerrar ventana</button>
+            
         </div>
     </div>
 </body>
