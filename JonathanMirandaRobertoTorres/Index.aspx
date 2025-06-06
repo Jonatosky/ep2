@@ -53,6 +53,10 @@
             background-color: #2ecc71;
             color: white;
         }
+        .btn-4 {
+            background-color: #ff6a00;
+            color: white;
+}
         .btn:hover {
             opacity: 0.8;
             transform: translateY(-2px);
@@ -72,7 +76,7 @@
             <button class="btn btn-1" onclick="window.location.href='pagina1.aspx'">Calculadora de Notas</button>
             <button class="btn btn-2" onclick="window.location.href='pagina2.aspx'">Concatenar Nombre</button>
             <button class="btn btn-3" onclick="window.location.href='pagina3.aspx'">Formulario de Contacto</button>
-            <button class="btn btn-4" onclick="window.location.href='pagina4.aspx'">Imagenes</button>
+            <button class="btn btn-4" onclick="window.location.href='pagina4.aspx'">Calculadora</button>
         </div>
     </div>
 </body>

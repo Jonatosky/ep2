@@ -1,73 +1,85 @@
 ﻿<!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>EPE2 - Programacion en C#</title>
-    <style>
-        body {
-            font-family: 'Calibri', sans-serif;
-            margin: 0;
-            padding: 20px;
-            background-color: #000000;
-        }
-        .container {
-            max-width: 400px;
-            margin left: 10 ;
-            text-align: center;
-        }
-        .logo {
-            width: 300px;
-            height: 200px;
-            margin-bottom: 20px;
-        }
-        h1 {
-            color: #333;
-            margin-bottom: 30px;
-        }
-        .btn-container {
-            display: flex;
-            flex-direction: column;
-            gap: 50px;
-            margin-top: 30px;
-        }
-        .btn {
-            padding: 12px 25px;
-            border: none;
-            border-radius: 5px;
-            font-size: 16px;
-            cursor: pointer;
-            font-family: 'Calibri', sans-serif;
-            font-weight: bold;
-            transition: all 0.3s;
-        }
-        .btn-1 {
-            background-color: #3498db;
-            color: white;
-        }
-        .btn-2 {
-            background-color: #e74c3c;
-            color: white;
-        }
-        .btn-3 {
-            background-color: #2ecc71;
-            color: white;
-        }
-        .btn:hover {
-            opacity: 0.8;
-            transform: translateY(-2px);
-        }
-        .auto-style1 {
-            color: #FFFFFF;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <title>Calculadora</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: left;
+      padding: 30px;
+      background-color: #808080;
+    }
+    input, select, button {
+      margin: 10px;
+      padding: 10px;
+      font-size: 16px;
+    }
+    .resultado {
+      margin-top: 20px;
+      font-size: 18px;
+    }
+  </style>
 </head>
 <body>
-    <div class="container">
-       <img src="img/LOGO-FONDO-BLANCO-JPG%20(1).jpg" style="height: 149px; width: 485px" />
-        <h1 class="auto-style1">Imagenes</h1>
-        <h1 class="auto-style1">Unidad 3</h1>  
 
+  <h2>Calculadora con Operación Seleccionable</h2>
+
+  <input type="number" id="num1" placeholder="Primer número">
+  <input type="number" id="num2" placeholder="Segundo número"><br>
+
+  <select id="operacion">
+    <option value="suma">Suma</option>
+    <option value="resta">Resta</option>
+    <option value="multiplicacion">Multiplicación</option>
+    <option value="division">División</option>
+  </select><br>
+
+  <button onclick="calcular()">Calcular</button>
+
+  <div class="resultado" id="resultado"></div>
+
+  <script>
+      function calcular() {
+          const n1 = parseFloat(document.getElementById("num1").value);
+          const n2 = parseFloat(document.getElementById("num2").value);
+          const operacion = document.getElementById("operacion").value;
+          const resultadoDiv = document.getElementById("resultado");
+
+          if (isNaN(n1) || isNaN(n2)) {
+              resultadoDiv.innerHTML = "Por favor, ingresa dos números válidos.";
+              return;
+          }
+
+          let resultado;
+
+          switch (operacion) {
+              case "suma":
+                  resultado = n1 + n2;
+                  break;
+              case "resta":
+                  resultado = n1 - n2;
+                  break;
+              case "multiplicacion":
+                  resultado = n1 * n2;
+                  break;
+              case "division":
+                  if (n2 === 0) {
+                      resultado = "No se puede dividir por cero.";
+                  } else {
+                      resultado = (n1 / n2).toFixed(2);
+                  }
+                  break;
+              default:
+                  resultado = "Operación no válida.";
+          }
+
+          resultadoDiv.innerHTML = `Resultado: ${resultado}`;
+      }
+  </script>
+
+</body>
+</html>
 
 <button class="btn btn-return" onclick="window.location.href='index.aspx'">Volver al Menú Principal</button>
 </div>
