@@ -69,6 +69,7 @@
   <ItemGroup>
     <Content Include="img\LOGO-FONDO-BLANCO-JPG %281%29.jpg" />
     <Content Include="img\Logo.png" />
+    <Content Include="MostrarVariables.aspx" />
     <Content Include="Pagina1.aspx" />
     <Content Include="Pagina2.aspx" />
     <Content Include="Pagina3.aspx" />
@@ -77,6 +78,13 @@
     <Content Include="Index.aspx" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="MostrarVariables.aspx.cs">
+      <DependentUpon>MostrarVariables.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MostrarVariables.aspx.designer.cs">
+      <DependentUpon>MostrarVariables.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Pagina1.aspx.cs">
       <DependentUpon>Pagina1.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>

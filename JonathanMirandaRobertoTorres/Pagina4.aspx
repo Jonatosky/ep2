@@ -5,29 +5,37 @@
   <title>Calculadora</title>
   <style>
     body {
-      font-family: Arial, sans-serif;
-      text-align: left;
-      padding: 30px;
-      background-color: #808080;
+      font-family: 'Calibri', sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #333;
     }
+    .h2 {
+        background-color: white; 
+        color: #333;
+        margin-top: 20px;
+        font-size: 18px;
+        }
     input, select, button {
-      background-color: #0094ff;
-        color: white;
+      background-color: white;
+        color: #000000;
       margin: 10px;
       padding: 10px;
       font-size: 16px;
     }
     .resultado {
-        background-color: #0094ff;
-        color: white;
+        background-color: white;
+        color: #000000;
       margin-top: 20px;
       font-size: 18px;
     }
+    
   </style>
+
 </head>
 <body>
-
-  <h2>Calculadora con Operación Seleccionable</h2>
+    <img src="img/LOGO-FONDO-BLANCO-JPG%20(1).jpg" style="height: 149px; width: 485px" />
+  <h2 class="auto-style2">Calculadora con Opcion de Operacion </h2>
 
   <input type="number" id="num1" placeholder="Primer número">
   <input type="number" id="num2" placeholder="Segundo número"><br>
